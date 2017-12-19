@@ -1,4 +1,4 @@
-# cnn.py: MIST recognition with CNN
+# cnn.py: MNIST image recognition with CNN
 # written by Sung Kyu Lim
 # limsk@ece.gatech.edu
 # 12/18/2017
