@@ -1,7 +1,7 @@
-# cnn-ex.py: CNN illustration 
+# cnn.py: MIST recognition with CNN
 # written by Sung Kyu Lim
 # limsk@ece.gatech.edu
-# 12/17/2017
+# 12/18/2017
 
 # B1: import tensorflow
 import tensorflow as tf
