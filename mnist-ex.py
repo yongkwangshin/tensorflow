@@ -8,7 +8,7 @@ images = mnist.test.images
 labels = mnist.test.labels
 
 # original data
-images = mnist.test.images.reshape([-1, 28, 28])
+images = images.reshape([-1, 28, 28])
 print(images.shape)
 print(images[0])
 
