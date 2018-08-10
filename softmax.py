@@ -31,7 +31,7 @@ sess.run(tf.global_variables_initializer())
 
 # B7: test the first digit in MNIST test set, which is 7.
 def test():
-    x_train = mnist.test.images[0:1, 0:784]
+    x_train = mnist.test.images[0:1]
     answer = sess.run(y, feed_dict={x: x_train})
     print('\ny vector is', answer)
     print('my guess is', answer.argmax())
@@ -54,3 +54,5 @@ accuracy = tf.reduce_mean(tf.cast(correct, tf.float32))
 images = mnist.test.images
 labels = mnist.test.labels
 print('\nmodel accuracy:', sess.run(accuracy, feed_dict={x: images, ans: labels}))
+
+print(sess.run(W[0:784, 0]))
