@@ -1,0 +1,12 @@
+I suggest the following foro Microsoft Visual Studio Code options:
+
+    "editor.wordWrap": "bounded",
+    "editor.wrappingIndent": "indent",
+    "editor.quickSuggestions": false,
+    "editor.parameterHints": false,
+    "editor.autoClosingBrackets": false,
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.acceptSuggestionOnEnter": "off",
+    "terminal.integrated.fontSize": 14
+    
+These options will stop the annoying pop-up windows during typing.
