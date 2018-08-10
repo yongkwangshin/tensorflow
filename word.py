@@ -1,7 +1,7 @@
-# rnn.py: word prediction with RNN
+# word.py: word prediction with RNN
 # written by Sung Kyu Lim
 # limsk@ece.gatech.edu
-# 12/19/2017
+# 8/10/2018
 
 # B1: import tensorflow and numpy
 import tensorflow as tf
