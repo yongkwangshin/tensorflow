@@ -1,7 +1,7 @@
 # word.py: word prediction with RNN
 # written by Sung Kyu Lim
 # limsk@ece.gatech.edu
-# 8/10/2018
+# 8/11/2018
 
 # B1: import tensorflow and numpy
 import tensorflow as tf
@@ -40,6 +40,8 @@ n_hidden = 128
 total_epoch = 100
 
 # B7: placeholders and variables
+# the input placeolder should be 3-dimensional 
+#     to use tensorflow RNN cells
 # note that Y, output label, is 1-dimensional
 X = tf.placeholder(tf.float32, [None, n_stage, n_input])
 Y = tf.placeholder(tf.int32, [None])
@@ -58,6 +60,7 @@ outputs, states = tf.nn.dynamic_rnn(multi_cell, X, dtype=tf.float32)
 # [batch_size, n_stage, n_hidden] ->
 # [n_stage, batch_size, n_hidden] ->
 # [batch_size, n_hidden] 
+# this cases the last stage output to be used
 # model produces 26 floating point values
 # prediction uses argmax to find which index model computes
 outputs = tf.transpose(outputs, [1, 0, 2])
